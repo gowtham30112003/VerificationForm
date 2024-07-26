@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OTP Verification Form</title>
+    <link rel="icon" type="image/x-icon" href="download.png">
+    <style>
+        body {
+            background: url(img.jpg);
+        }
+        .container
+        {
+            background-color: white;
+            width: 400px;
+            height: 500px;
+            border-radius: 50% 10% 50% 10%/10% 50% 10% 50%;
+            margin: 30px auto;
+            display: flex;
+            justify-content: center;
+        }
+        #ha
+        {
+            font-size: 80px;
+            display: flex;
+            justify-content: center;
+            background: url(images.jpg);
+            background-clip: text;
+            color: transparent;
+            animation: go 5s infinite;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        @keyframes move{
+            100%
+            {
+                background-position-y: 1500px;
+            }
+        }
+        @keyframes go {
+            100%
+            {
+                background-position-y: 500px;
+            }
+            
+        }
+        .title
+        {
+            font-size: 40px;
+            display: flex;
+            justify-content: center;
+            background: url(pexels-photo-207353.webp);
+            background-clip: text;
+            color: transparent;
+            animation: move 3s infinite;
+        }
+        .message
+        {
+            margin-top: 5px;
+            display: flex;
+            justify-content: center;
+            font-size: medium;
+            font-weight: 4px;
+            color: rgb(223, 223, 157);
+        }
+        .inputs
+        {
+            margin-top: 80px;
+            display: flex;
+        }
+        #input
+        {
+            width: 50px;
+            height: 70px;
+            font-size: 20px;
+            padding: 5px;
+            text-align: center;
+            border-radius: 5px;
+            margin: 5px;
+            border: 2px solid seagreen;
+        }
+        #input:hover
+        {
+            transition: 0.2s ease-in-out;
+            border-radius: 20px;
+        }
+        .mega
+        {
+            display: flex;
+            justify-content: center;
+        }
+        .action{
+            margin-top: 50px;
+            height: 40px;
+            width: 100px;
+            background-color: rgb(64, 0, 255);
+            color: white;
+            border: 1px solid blue;
+            border-radius: 10px;
+        }
+        .action:hover
+        { 
+            font-style: italic;
+            transition: 0.1s ease-in-out;
+            border-radius: 20px;
+        }
+
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="entercontainer">
+            <form class="form">
+                <div id="ha">OTP</div>
+                <div class="title">Verification Code</div>
+                <p class="message">
+                    We have sent a verification code to your email
+                </p>
+                <div class="inputs">
+                    <input id="input" type="text" maxlength="1" pattern="[0-9]{1}">
+                    <input id="input" type="text" maxlength="1" pattern="[0-9]{1}">
+                    <input id="input" type="text" maxlength="1" pattern="[0-9]{1}">
+                    <input id="input" type="text" maxlength="1" pattern="[0-9]{1}">
+                </div>
+                <div class="mega">
+                <button class="action">Verify Me</button>
+                </div>
+            </form>
+
+        </div>
+    </div>
+</body>
+
+</html>
